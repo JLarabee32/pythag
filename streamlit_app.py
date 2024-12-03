@@ -1,6 +1,7 @@
 import streamlit as st
 st.title("Pythagoras's Puck")
 st.subheader("Applying the Pythagorean Theorem to Predict NHL Seasons")
+st.markdown("By Joey Larabee")
 
 st.image("https://i.ytimg.com/vi/YKYd2Osu0nQ/maxresdefault.jpg")
 
