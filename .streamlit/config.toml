@@ -1,5 +1,0 @@
-[server]
-headless = true
-
-[runner]
-scriptPath = "Pythag_Puck.py"
