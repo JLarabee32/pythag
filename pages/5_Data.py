@@ -17,6 +17,7 @@ nhl_data['Win_Pct_real'] = (nhl_data['P'] / nhl_data['GP']) / 2
 nhl_data['log_likelihood_real'] = np.log(nhl_data['Win_Pct_real'] / (1 - nhl_data['Win_Pct_real']))
 nhl_data['log_goals_real'] = np.log(nhl_data['GF'] / nhl_data['GA'])
 nhl_data['implied_exponent'] = nhl_data['log_likelihood_real'] / nhl_data['log_goals_real']
+implied_exponent = nhl_data['implied_exponent']
 nhl_data['Y_mean'] = nhl_data['GF'] ** np.mean(implied_exponent) / (nhl_data['GF'] ** np.mean(implied_exponent) + nhl_data['GA'] ** np.mean(implied_exponent))
 # Process Cup data
 cup['Win_Pct_cup'] = (cup['PTS'] / cup['GP']) / 2
