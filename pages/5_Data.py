@@ -34,3 +34,6 @@ st.write(nhl_data)
 
 st.subheader("Cup Results")
 st.write(cup)
+
+st.subheader("Data Processing Notes")
+st.markdown("Because of the way that the implied exponent is derived there are some infinite values created. For the purposes of calculating the mean of the dataset and creating useful insights these infinite values were converted to NaNs and dropped from the dataset. Infinite values came from dividing by zero, but there was also a spike of teams at 0 because the derivation also created a number of zeros in the numerator and therefore a spike at zero which did not reflect any actual useful information from the dataset. These zeros were also excluded from the dataset.")
